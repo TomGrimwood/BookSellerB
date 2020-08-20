@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		906179C724ECB06B0045E788 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906179C624ECB06B0045E788 /* main.cpp */; };
+		906179D224ECB07F0045E788 /* Book.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906179CE24ECB07F0045E788 /* Book.cpp */; };
+		906179D324ECB07F0045E788 /* 202_270_ACP_Lecture8.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906179CF24ECB07F0045E788 /* 202_270_ACP_Lecture8.cpp */; };
+		906179D424ECB07F0045E788 /* BookSeller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 906179D124ECB07F0045E788 /* BookSeller.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +25,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		906179C324ECB06B0045E788 /* BookSellerB */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookSellerB; sourceTree = BUILT_PRODUCTS_DIR; };
-		906179C624ECB06B0045E788 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		906179CD24ECB07F0045E788 /* BookSeller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookSeller.h; sourceTree = "<group>"; };
+		906179CE24ECB07F0045E788 /* Book.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Book.cpp; sourceTree = "<group>"; };
+		906179CF24ECB07F0045E788 /* 202_270_ACP_Lecture8.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 202_270_ACP_Lecture8.cpp; sourceTree = "<group>"; };
+		906179D024ECB07F0045E788 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Book.h; sourceTree = "<group>"; };
+		906179D124ECB07F0045E788 /* BookSeller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BookSeller.cpp; sourceTree = "<group>"; };
+		906179D524ECB10E0045E788 /* BookSellerB */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BookSellerB; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,25 +47,13 @@
 		906179BA24ECB06B0045E788 = {
 			isa = PBXGroup;
 			children = (
-				906179C524ECB06B0045E788 /* BookSellerB */,
-				906179C424ECB06B0045E788 /* Products */,
+				906179CF24ECB07F0045E788 /* 202_270_ACP_Lecture8.cpp */,
+				906179CE24ECB07F0045E788 /* Book.cpp */,
+				906179D024ECB07F0045E788 /* Book.h */,
+				906179D124ECB07F0045E788 /* BookSeller.cpp */,
+				906179CD24ECB07F0045E788 /* BookSeller.h */,
+				906179D524ECB10E0045E788 /* BookSellerB */,
 			);
-			sourceTree = "<group>";
-		};
-		906179C424ECB06B0045E788 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				906179C324ECB06B0045E788 /* BookSellerB */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		906179C524ECB06B0045E788 /* BookSellerB */ = {
-			isa = PBXGroup;
-			children = (
-				906179C624ECB06B0045E788 /* main.cpp */,
-			);
-			path = BookSellerB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -79,7 +73,7 @@
 			);
 			name = BookSellerB;
 			productName = BookSellerB;
-			productReference = 906179C324ECB06B0045E788 /* BookSellerB */;
+			productReference = 906179D524ECB10E0045E788 /* BookSellerB */;
 			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +99,7 @@
 				Base,
 			);
 			mainGroup = 906179BA24ECB06B0045E788;
-			productRefGroup = 906179C424ECB06B0045E788 /* Products */;
+			productRefGroup = 906179BA24ECB06B0045E788;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -119,7 +113,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				906179C724ECB06B0045E788 /* main.cpp in Sources */,
+				906179D424ECB07F0045E788 /* BookSeller.cpp in Sources */,
+				906179D224ECB07F0045E788 /* Book.cpp in Sources */,
+				906179D324ECB07F0045E788 /* 202_270_ACP_Lecture8.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +235,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -247,6 +244,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
